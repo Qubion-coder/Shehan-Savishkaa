@@ -26,7 +26,8 @@ export const metadata: Metadata = {
   description: 'Join us as we celebrate the homecoming of SHEHAN and SAVISHKAA on December 5, 2026 at Cinnamon Lakeside Colombo.',
   generator: 'v0.app',
   icons: {
-    icon: '/ss-monogram.svg',
+    icon: '/mono.png',
+    apple: '/mono.png',
   },
   openGraph: {
     title: 'SHEHAN & SAVISHKAA Homecoming',

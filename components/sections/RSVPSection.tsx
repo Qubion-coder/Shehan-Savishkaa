@@ -100,7 +100,7 @@ export default function RSVPSection({ guestName }: { guestName?: string }) {
             className="relative mx-auto mb-8 w-32 h-32 md:w-44 md:h-44 rounded-full border-8 border-white bg-white shadow-[0_20px_42px_rgba(165,29,45,0.3)] p-[2px] z-10 block"
           >
             <div className="relative flex h-full w-full items-center justify-center rounded-full bg-white overflow-hidden">
-              <Monogram className="text-5xl text-primary md:text-7xl" />
+              <Monogram className="h-full w-full p-4 md:p-5" />
             </div>
 
             {/* Tiny floating decorative elements around the image */}

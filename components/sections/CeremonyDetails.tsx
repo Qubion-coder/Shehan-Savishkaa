@@ -117,7 +117,7 @@ export default function CeremonyDetails() {
                 className="mt-6 overflow-hidden rounded-[2.5rem] border border-secondary/10 bg-secondary/5 p-8 shadow-sm backdrop-blur-lg relative"
               >
                 <div className="absolute right-0 top-0 opacity-15">
-                  <Monogram className="-mt-2 mr-4 text-7xl text-primary" />
+                  <Monogram className="-mt-8 -mr-8 h-32 w-32" />
                 </div>
 
                 <h4 className="text-xs uppercase tracking-widest text-secondary mb-4 font-bold flex items-center gap-2">
