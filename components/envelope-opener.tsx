@@ -188,6 +188,19 @@ export function EnvelopeOpener({ onEnvelopeOpen, guestName }: EnvelopeOpenerProp
               <h1 className="font-script text-4xl md:text-6xl tracking-[0.05em] text-[#8f1626] capitalize">
                 Shehan <span className="text-[#c9a24a]">&amp;</span> Savishkaa
               </h1>
+              {guestName && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, delay: 0.6 }}
+                  className="mt-5"
+                >
+                  <p className="text-[9px] md:text-[10px] uppercase tracking-[0.45em] text-[#8f1626]/70">
+                    Specially for
+                  </p>
+                  <p className="mt-2 font-serif text-xl md:text-2xl italic text-[#5a0b14]">{guestName}</p>
+                </motion.div>
+              )}
             </motion.div>
 
             {/* Envelope stage */}

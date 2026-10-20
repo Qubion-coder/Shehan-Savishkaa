@@ -46,7 +46,7 @@ export default function PersonalizedWelcome({ guestName }: PersonalizedWelcomePr
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent mx-auto mb-8" />
           <p className="max-w-xl mx-auto text-[#5c3b3f] text-sm md:text-base leading-relaxed font-light tracking-wide">
-            We are truly honored to have you with us as we celebrate the beginning of our new life together. Your presence makes our special day even more meaningful.
+            We cordially invite <span className="font-serif italic font-medium text-primary">{guestName}</span> to celebrate our special day with us.
           </p>
         </motion.div>
       </div>

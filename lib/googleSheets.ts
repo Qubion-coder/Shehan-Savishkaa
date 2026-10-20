@@ -7,14 +7,12 @@ interface SubmitPayload {
   message?: string;
 }
 
+// Apps Script web app for Shehan & Savishkaa's RSVP / wish sheet (see code.gs)
+const GOOGLE_SCRIPT_URL =
+  'https://script.google.com/macros/s/AKfycbxF-zBq67UMxPh2pAKrZ8Mj3jLRfcKTQhlL2iJZo88yzr2h3GjZEt9kSCxTYDC95FcK/exec';
+
 export async function submitToGoogleSheets(payload: SubmitPayload): Promise<void> {
-  const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
-
-  if (!scriptUrl) {
-    throw new Error('Missing NEXT_PUBLIC_GOOGLE_SCRIPT_URL');
-  }
-
-  await fetch(scriptUrl, {
+  await fetch(GOOGLE_SCRIPT_URL, {
     method: 'POST',
     mode: 'no-cors',
     headers: {

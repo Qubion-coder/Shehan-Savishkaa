@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Clock3, MapPin, Sparkles, Crown, Heart, Cross } from 'lucide-react';
 import Image from 'next/image';
-import Monogram from '@/components/Monogram';
 
 export default function CeremonyDetails() {
   const { ref, inView } = useInView({
@@ -109,31 +108,6 @@ export default function CeremonyDetails() {
                   </motion.div>
                 );
               })}
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={inView ? { opacity: 1 } : {}}
-                transition={{ duration: 1, delay: 0.6 }}
-                className="mt-6 overflow-hidden rounded-[2.5rem] border border-secondary/10 bg-secondary/5 p-8 shadow-sm backdrop-blur-lg relative"
-              >
-                <div className="absolute right-0 top-0 opacity-15">
-                  <Monogram className="-mt-8 -mr-8 h-32 w-32" />
-                </div>
-
-                <h4 className="text-xs uppercase tracking-widest text-secondary mb-4 font-bold flex items-center gap-2">
-                  <span className="w-6 h-[1px] bg-secondary"></span> Guest Notes
-                </h4>
-                <div className="space-y-3">
-                  <p className="text-foreground/80 text-sm md:text-base font-medium flex items-center gap-3">
-                    <span className="h-1.5 w-1.5 rounded-full bg-secondary"></span>
-                    <span><span className="text-secondary font-bold uppercase tracking-wider text-[11px] mr-2">Dress Code:</span> Elegant / Formal Attire</span>
-                  </p>
-                  <p className="text-foreground/80 text-sm md:text-base font-medium flex items-center gap-3">
-                    <span className="h-1.5 w-1.5 rounded-full bg-secondary"></span>
-                    <span><span className="text-secondary font-bold uppercase tracking-wider text-[11px] mr-2">Theme Colour:</span> Red</span>
-                  </p>
-                </div>
-              </motion.div>
             </div>
           </motion.div>
         </div>

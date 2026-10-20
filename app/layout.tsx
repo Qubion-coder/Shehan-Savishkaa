@@ -21,8 +21,19 @@ const ballet = Ballet({
   variable: '--font-ballet'
 })
 
+const SITE_URL = 'https://shehan-savishkaa-homecomingfunction.vercel.app'
+const SHARE_TITLE = 'SHEHAN & SAVISHKAA Homecoming'
+const SHARE_DESCRIPTION = 'Saturday, 05 December 2026 · 6:30 PM · King\'s Court, Cinnamon Lakeside Colombo'
+const SHARE_IMAGE = {
+  url: '/og-image.jpg',
+  width: 1200,
+  height: 1200,
+  alt: 'Shehan & Savishkaa Homecoming Invitation',
+}
+
 export const metadata: Metadata = {
-  title: 'SHEHAN & SAVISHKAA Homecoming',
+  metadataBase: new URL(SITE_URL),
+  title: SHARE_TITLE,
   description: 'Join us as we celebrate the homecoming of SHEHAN and SAVISHKAA on December 5, 2026 at Cinnamon Lakeside Colombo.',
   generator: 'v0.app',
   icons: {
@@ -30,9 +41,18 @@ export const metadata: Metadata = {
     apple: '/mono.png',
   },
   openGraph: {
-    title: 'SHEHAN & SAVISHKAA Homecoming',
-    description: 'Saturday, 05 December 2026 · 6:30 PM · King\'s Court, Cinnamon Lakeside Colombo',
-    images: ['/pre/2.jpeg'],
+    type: 'website',
+    url: SITE_URL,
+    siteName: SHARE_TITLE,
+    title: SHARE_TITLE,
+    description: SHARE_DESCRIPTION,
+    images: [SHARE_IMAGE],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SHARE_TITLE,
+    description: SHARE_DESCRIPTION,
+    images: [SHARE_IMAGE.url],
   },
 }
 
