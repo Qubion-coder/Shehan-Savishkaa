@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Playfair_Display, Inter, Pinyon_Script } from 'next/font/google'
+import { Playfair_Display, Inter, Ballet } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import './enhancements.css'
@@ -15,24 +15,28 @@ const inter = Inter({
   variable: '--font-sans'
 })
 
-const pinyonScript = Pinyon_Script({
+const ballet = Ballet({
   subsets: ["latin"],
   weight: ['400'],
-  variable: '--font-script'
+  variable: '--font-ballet'
 })
 
 export const metadata: Metadata = {
-  title: 'NIPUNI & RAVINDU Wedding',
-  description: 'Join us as we celebrate the wedding of NIPUNI and RAVINDU on July 31, 2026.',
+  title: 'SHEHAN & SAVISHKAA Homecoming',
+  description: 'Join us as we celebrate the homecoming of SHEHAN and SAVISHKAA on December 5, 2026 at Cinnamon Lakeside Colombo.',
   generator: 'v0.app',
   icons: {
-    icon: '/Screenshot 2026-05-08 031308.png',
-    apple: '/Screenshot 2026-05-08 031308.png',
+    icon: '/ss-monogram.svg',
+  },
+  openGraph: {
+    title: 'SHEHAN & SAVISHKAA Homecoming',
+    description: 'Saturday, 05 December 2026 · 6:30 PM · King\'s Court, Cinnamon Lakeside Colombo',
+    images: ['/pre/2.jpeg'],
   },
 }
 
 export const viewport: Viewport = {
-  themeColor: '#D4AF37',
+  themeColor: '#a51d2d',
   width: 'device-width',
   initialScale: 1,
   userScalable: true,
@@ -44,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfairDisplay.variable} ${inter.variable} ${pinyonScript.variable}`}>
+    <html lang="en" className={`${playfairDisplay.variable} ${inter.variable} ${ballet.variable}`}>
       <body className="font-sans antialiased">
         {children}
         <Analytics />

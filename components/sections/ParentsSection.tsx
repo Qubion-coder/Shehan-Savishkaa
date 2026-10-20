@@ -47,7 +47,7 @@ function ParentsSectionContent() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-20 text-center"
           >
-            <div className="relative inline-block w-full max-w-3xl overflow-hidden rounded-[3rem] border border-primary/20 bg-[linear-gradient(135deg,rgba(255,255,255,0.95),rgba(255,248,249,0.98))] p-8 md:p-14 shadow-[0_30px_70px_rgba(255,190,198,0.15)] backdrop-blur-xl">
+            <div className="relative inline-block w-full max-w-3xl overflow-hidden rounded-[3rem] border border-primary/20 bg-[linear-gradient(135deg,rgba(255,255,255,0.95),rgba(255,248,249,0.98))] p-8 md:p-14 shadow-[0_30px_70px_rgba(165,29,45,0.15)] backdrop-blur-xl">
               {/* Internal Card Decor */}
               <div className="absolute top-[-10%] right-[-10%] h-[150px] w-[150px] rounded-full bg-primary/5 blur-[40px]" />
               <div className="absolute bottom-[-10%] left-[-10%] h-[150px] w-[150px] rounded-full bg-secondary/5 blur-[40px]" />
@@ -84,7 +84,7 @@ function ParentsSectionContent() {
             className="w-full lg:w-1/3"
           >
             <div className="relative aspect-[4/5] md:h-[450px] md:aspect-auto rounded-[2rem] overflow-hidden border-8 border-white shadow-2xl">
-              <img src="/images/whatsapp_photo_2.jpeg" alt="Couple" className="w-full h-full object-cover object-[center_30%]" />
+              <img src="/pre/2.jpeg" alt="Shehan and Savishkaa" className="w-full h-full object-cover object-[center_45%]" />
             </div>
           </motion.div>
           <div className="flex-1 text-center lg:text-left px-4">
@@ -95,9 +95,9 @@ function ParentsSectionContent() {
               className="space-y-6"
             >
               <div className="space-y-4">
-                <p className="font-serif text-xl md:text-3xl text-foreground uppercase tracking-wider">MR. JANITH PERERA &amp; MRS. BIMBA LIYANAGE</p>
+                <p className="font-serif text-xl md:text-3xl text-foreground uppercase tracking-wider">MR. &amp; MRS. BOPEARACHCHI</p>
                 <p className="text-secondary font-bold uppercase tracking-[0.2em]">Together with</p>
-                <p className="font-serif text-xl md:text-3xl text-foreground uppercase tracking-wider">MR. PRASANTHA PERERA &amp; MRS. CHANDRIKA KANNANGARA</p>
+                <p className="font-serif text-xl md:text-3xl text-foreground uppercase tracking-wider">MR. &amp; MRS. SENADHIPATHY</p>
               </div>
 
               <div className="py-6">
@@ -105,8 +105,8 @@ function ParentsSectionContent() {
               </div>
 
               <div className="space-y-4">
-                <p className="text-xs font-bold uppercase tracking-[0.3em] text-secondary">TO CELEBRATE THE MARRIAGE OF THEIR CHILDREN</p>
-                <h3 className="font-serif text-3xl md:text-6xl text-primary font-bold uppercase tracking-widest leading-tight">NIPUNI &amp; RAVINDU</h3>
+                <p className="text-xs font-bold uppercase tracking-[0.3em] text-secondary">REQUEST THE PLEASURE OF YOUR COMPANY AT THE HOMECOMING OF THEIR CHILDREN</p>
+                <h3 className="font-serif text-3xl md:text-6xl text-primary font-bold uppercase tracking-widest leading-tight">SHEHAN &amp; SAVISHKAA</h3>
               </div>
             </motion.div>
           </div>

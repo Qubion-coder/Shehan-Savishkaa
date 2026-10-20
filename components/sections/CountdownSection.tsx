@@ -18,7 +18,7 @@ export default function CountdownSection() {
     triggerOnce: true,
   });
 
-  const targetDate = useMemo(() => new Date('2026-07-31T08:30:00').getTime(), []);
+  const targetDate = useMemo(() => new Date('2026-12-05T18:30:00+05:30').getTime(), []);
 
   const getTimeLeft = (): TimeLeft => {
     const now = new Date().getTime();
@@ -77,19 +77,19 @@ export default function CountdownSection() {
         <motion.div
           animate={{ x: [0, -45, 0], y: [0, -45, 0], scale: [1, 1.18, 1] }}
           transition={{ duration: 19, repeat: Infinity, ease: 'easeInOut', delay: 1.8 }}
-          className="absolute -right-[10%] top-[32%] h-[42vw] w-[42vw] rounded-full bg-gradient-to-tl from-[#e8dafd] to-[#fde3eb] opacity-60 blur-[110px]"
+          className="absolute -right-[10%] top-[32%] h-[42vw] w-[42vw] rounded-full bg-gradient-to-tl from-[#f6d5d8] to-[#fbe6e4] opacity-60 blur-[110px]"
         />
         <motion.div
           animate={{ x: [0, 24, 0], y: [0, -35, 0] }}
           transition={{ duration: 13, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
-          className="absolute bottom-[-20%] left-[18%] h-[44vw] w-[44vw] rounded-full bg-[#fdd7df] opacity-45 blur-[110px]"
+          className="absolute bottom-[-20%] left-[18%] h-[44vw] w-[44vw] rounded-full bg-[#f6d5d8] opacity-45 blur-[110px]"
         />
 
         <div
           className="absolute inset-0 opacity-[0.18]"
           style={{
             backgroundImage:
-              'radial-gradient(circle at 12px 12px, rgba(185,127,86,0.35) 1px, transparent 1px)',
+              'radial-gradient(circle at 12px 12px, rgba(165,29,45,0.35) 1px, transparent 1px)',
             backgroundSize: '36px 36px',
           }}
         />
@@ -100,7 +100,7 @@ export default function CountdownSection() {
         {floatingHearts.map((heart) => (
           <motion.div
             key={heart.id}
-            className="absolute text-[#c9788a]/40"
+            className="absolute text-[#a51d2d]/40"
             style={{ left: heart.left, top: heart.top }}
             animate={{
               y: [0, -90, 0],
@@ -159,12 +159,12 @@ export default function CountdownSection() {
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#7a5f57] sm:text-lg">
-            Every second brings us closer to our blessed wedding day. We cannot wait to celebrate this grace-filled moment with you.
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-[#7a5c5f] sm:text-lg">
+            Every second brings us closer to our homecoming celebration. We cannot wait to share this joyful evening with you.
           </p>
         </motion.div>
 
-        <div className="rounded-[2rem] border border-[#e7c5a0]/40 bg-white/55 p-4 shadow-[0_20px_70px_rgba(177,120,84,0.18)] backdrop-blur-xl sm:p-6 md:p-8">
+        <div className="rounded-[2rem] border border-[#e8b4b8]/40 bg-white/55 p-4 shadow-[0_20px_70px_rgba(122,18,32,0.18)] backdrop-blur-xl sm:p-6 md:p-8">
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
           {countdownItems.map((item, index) => (
             <motion.div
@@ -180,17 +180,17 @@ export default function CountdownSection() {
               whileHover={{ y: -8, scale: 1.02 }}
               className="group relative"
             >
-              <div className="relative overflow-hidden rounded-[1.8rem] border border-[#f1dfc9] bg-[linear-gradient(160deg,rgba(255,255,255,0.92)_0%,rgba(255,244,230,0.82)_100%)] p-5 shadow-[0_12px_30px_rgba(194,133,92,0.15)] transition-all duration-300 group-hover:shadow-[0_20px_45px_rgba(194,133,92,0.24)] md:p-7">
+              <div className="relative overflow-hidden rounded-[1.8rem] border border-[#f0d4d2] bg-[linear-gradient(160deg,rgba(255,255,255,0.92)_0%,rgba(253,240,240,0.82)_100%)] p-5 shadow-[0_12px_30px_rgba(122,18,32,0.15)] transition-all duration-300 group-hover:shadow-[0_20px_45px_rgba(122,18,32,0.24)] md:p-7">
                 <div className="absolute inset-0 opacity-[0.15]"
                   style={{
                     backgroundImage:
-                      'linear-gradient(rgba(216,150,103,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(216,150,103,0.5) 1px, transparent 1px)',
+                      'linear-gradient(rgba(165,29,45,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(165,29,45,0.5) 1px, transparent 1px)',
                     backgroundSize: '24px 24px',
                   }}
                 />
 
-                <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full border border-[#dca57f]/40" />
-                <div className="absolute -left-6 -bottom-6 h-16 w-16 rounded-full border border-[#dca57f]/25" />
+                <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full border border-[#c9a24a]/40" />
+                <div className="absolute -left-6 -bottom-6 h-16 w-16 rounded-full border border-[#c9a24a]/25" />
 
                 <div className="relative z-10 flex flex-col items-center justify-center text-center">
                   <div className="relative flex h-[64px] w-full items-center justify-center overflow-hidden sm:h-[78px] md:h-[96px]">
@@ -206,7 +206,7 @@ export default function CountdownSection() {
                           damping: 24,
                           mass: 1
                         }}
-                        className="absolute font-serif text-5xl font-semibold text-[#513933] drop-shadow-[0_2px_8px_rgba(121,80,59,0.25)] sm:text-6xl md:text-7xl"
+                        className="absolute font-serif text-5xl font-semibold text-[#5a0b14] drop-shadow-[0_2px_8px_rgba(90,11,20,0.25)] sm:text-6xl md:text-7xl"
                       >
                         {String(item.value).padStart(2, '0')}
                       </motion.span>
@@ -231,10 +231,10 @@ export default function CountdownSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, delay: 0.8 }}
         >
-          <div className="flex items-center gap-3 text-[#bd6f56]">
+          <div className="flex items-center gap-3 text-[#a51d2d]">
             <Stars size={14} className="animate-pulse" />
             <Heart size={15} className="animate-bounce" fill="currentColor" />
-            <span className="font-serif italic text-lg text-[#7c625a] sm:text-xl">
+            <span className="font-serif italic text-lg text-[#7a5c5f] sm:text-xl">
               Can't wait to see you there!
             </span>
             <Heart size={15} className="animate-bounce" fill="currentColor" style={{ animationDelay: '200ms' }} />

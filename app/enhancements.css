@@ -5,13 +5,13 @@ html {
 
 /* Text Selection Styling */
 ::selection {
-  background-color: var(--gold);
+  background-color: var(--primary);
   color: var(--white);
 }
 
 /* Placeholder Styling */
 ::placeholder {
-  color: var(--light-gray);
+  color: var(--text-muted);
   opacity: 0.7;
 }
 
@@ -20,7 +20,7 @@ button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 2px solid var(--gold);
+  outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
 

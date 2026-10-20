@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const SONG_SRC = '/mata-denna-lobai-gajindu-fonseka-pranirsha-thiyagaraja.mp3';
+const SONG_SRC = '/sing.mp3';
 
 export default function MusicPlayer() {
     const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -82,7 +82,7 @@ export default function MusicPlayer() {
                         animate={{ opacity: 1, x: 0, scale: 1 }}
                         exit={{ opacity: 0, x: 20, scale: 0.8 }}
                         className="bg-white/90 backdrop-blur-md border border-secondary/30 rounded-full px-4 py-2 shadow-xl flex items-center gap-2 mb-2"
-                        style={{ borderColor: 'rgba(158, 170, 148, 0.3)' }}
+                        style={{ borderColor: 'rgba(165, 29, 45, 0.3)' }}
                     >
                         <motion.span
                             animate={{ scale: [1, 1.2, 1] }}
@@ -92,7 +92,7 @@ export default function MusicPlayer() {
                             🎵
                         </motion.span>
                         <span className="text-[11px] font-bold text-secondary uppercase tracking-wider">
-                            Tap for Wedding Music
+                            Tap for Music
                         </span>
                     </motion.div>
                 )}
@@ -103,9 +103,9 @@ export default function MusicPlayer() {
                 onClick={toggle}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="pointer-events-auto relative w-14 h-14 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(158,170,148,0.4)] border-2 border-white group"
+                className="pointer-events-auto relative w-14 h-14 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(165,29,45,0.4)] border-2 border-white group"
                 style={{
-                    background: 'linear-gradient(135deg, #9eaa94 0%, #8b9783 100%)',
+                    background: 'linear-gradient(135deg, #a51d2d 0%, #7a1220 100%)',
                 }}
                 aria-label={isPlaying ? 'Pause music' : 'Play music'}
             >
@@ -116,13 +116,13 @@ export default function MusicPlayer() {
                             className="absolute inset-0 rounded-full border border-secondary/40"
                             animate={{ scale: [1, 1.8], opacity: [0.5, 0] }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeOut" }}
-                            style={{ borderColor: 'rgba(158, 170, 148, 0.4)' }}
+                            style={{ borderColor: 'rgba(165, 29, 45, 0.4)' }}
                         />
                         <motion.div
                             className="absolute inset-0 rounded-full border border-[#D4AF37]/40"
                             animate={{ scale: [1, 1.4], opacity: [0.5, 0] }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeOut", delay: 0.5 }}
-                            style={{ borderColor: 'rgba(216, 183, 140, 0.4)' }}
+                            style={{ borderColor: 'rgba(201, 162, 74, 0.4)' }}
                         />
                     </>
                 )}

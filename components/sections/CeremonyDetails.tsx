@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Clock3, MapPin, Sparkles, Crown, Heart, Cross } from 'lucide-react';
 import Image from 'next/image';
+import Monogram from '@/components/Monogram';
 
 export default function CeremonyDetails() {
   const { ref, inView } = useInView({
@@ -13,24 +14,14 @@ export default function CeremonyDetails() {
 
   const detailGroups = [
     {
-      key: 'poruwa',
-      title: 'Poruwa Ceremony',
-      timeLabel: 'Ceremony Time',
-      timeValue: '8:30 AM',
-      timeSub: 'Traditional Sri Lankan Ceremony',
+      key: 'homecoming',
+      title: 'Homecoming Celebration',
+      timeLabel: 'Saturday, 05 December 2026',
+      timeValue: '6:30 PM - 11:30 PM',
+      timeSub: 'An Evening of Celebration & Dining',
       venueLabel: 'Venue',
-      venueValue: 'OUTDOOR DECK, WATERS EDGE',
-      venueSub: '316, ETHUL KOTTE RD, BATTARAMULLA',
-    },
-    {
-      key: 'reception',
-      title: 'Wedding Reception',
-      timeLabel: 'Reception Time',
-      timeValue: '10:00 AM - 4:00 PM',
-      timeSub: 'Grand Celebration & Dining',
-      venueLabel: 'Venue',
-      venueValue: 'GRAND BALLROOM, WATERS EDGE',
-      venueSub: '316, ETHUL KOTTE RD, BATTARAMULLA',
+      venueValue: "KING'S COURT, CINNAMON LAKESIDE",
+      venueSub: '115, SIR CHITTAMPALAM A. GARDINER MAWATHA, COLOMBO 02',
     },
   ];
 
@@ -66,16 +57,16 @@ export default function CeremonyDetails() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-secondary/30 bg-secondary/5 px-5 py-2 backdrop-blur-sm">
               <Sparkles className="h-4 w-4 text-secondary" />
               <span className="text-xs uppercase tracking-[0.3em] text-secondary font-bold">
-                The Sacred Celebration
+                The Celebration
               </span>
             </div>
 
             <h2 className="mb-6 font-serif text-5xl font-light leading-tight text-foreground md:text-7xl">
-              Wedding <span className="italic text-primary">Ceremony</span>
+              Homecoming <span className="italic text-primary">Ceremony</span>
             </h2>
 
             <p className="mb-12 text-lg leading-relaxed text-foreground/70 max-w-2xl px-4">
-              With immense joy in our hearts, we invite you to share our happiness as we exchange our vows. Join us for a beautiful celebration of faith, love, and lifelong commitment.
+              With hearts full of joy, we warmly invite you to join us as we begin our new chapter together. Share an evening of love, laughter, and celebration with us.
             </p>
 
             <div className="flex flex-col gap-6 w-full max-w-2xl text-left px-4">
@@ -126,11 +117,7 @@ export default function CeremonyDetails() {
                 className="mt-6 overflow-hidden rounded-[2.5rem] border border-secondary/10 bg-secondary/5 p-8 shadow-sm backdrop-blur-lg relative"
               >
                 <div className="absolute right-0 top-0 opacity-15">
-                  <img
-                    src="/Screenshot 2026-05-08 031308.png"
-                    alt="Monogram"
-                    className="w-32 h-32 -mt-8 -mr-8 object-contain"
-                  />
+                  <Monogram className="-mt-2 mr-4 text-7xl text-primary" />
                 </div>
 
                 <h4 className="text-xs uppercase tracking-widest text-secondary mb-4 font-bold flex items-center gap-2">
@@ -140,6 +127,10 @@ export default function CeremonyDetails() {
                   <p className="text-foreground/80 text-sm md:text-base font-medium flex items-center gap-3">
                     <span className="h-1.5 w-1.5 rounded-full bg-secondary"></span>
                     <span><span className="text-secondary font-bold uppercase tracking-wider text-[11px] mr-2">Dress Code:</span> Elegant / Formal Attire</span>
+                  </p>
+                  <p className="text-foreground/80 text-sm md:text-base font-medium flex items-center gap-3">
+                    <span className="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+                    <span><span className="text-secondary font-bold uppercase tracking-wider text-[11px] mr-2">Theme Colour:</span> Red</span>
                   </p>
                 </div>
               </motion.div>

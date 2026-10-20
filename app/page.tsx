@@ -16,6 +16,7 @@ import BlessingsSection from '@/components/sections/BlessingsSection';
 import FooterSection from '@/components/sections/FooterSection';
 import SimpleImageSection from '@/components/sections/SimpleImageSection';
 import MusicPlayer from '@/components/MusicPlayer';
+import RosePetals from '@/components/RosePetals';
 
 function HomeContent() {
   const [isOpened, setIsOpened] = useState(false);
@@ -42,18 +43,19 @@ function HomeContent() {
         />
       ) : (
         <>
+          <RosePetals />
           <HeroSection />
           <PersonalizedWelcome guestName={personalizedName} />
           <ParentsSection />
 
           <CeremonyDetails />
-          <SimpleImageSection imageSrc="/1.jpeg" />
+          <SimpleImageSection imageSrc="/pre/5.jpeg" />
           <CountdownSection />
-          <SimpleImageSection imageSrc="/2.jpeg" />
+          <SimpleImageSection imageSrc="/pre/6.jpeg" />
 
           <VenueLocation />
           <RSVPSection guestName={personalizedName} />
-          <SimpleImageSection imageSrc="/3.jpeg" objectPosition="object-bottom" useFullImage />
+          <SimpleImageSection imageSrc="/pre/4.jpeg" useFullImage />
           <BlessingsSection />
           <FooterSection />
         </>
