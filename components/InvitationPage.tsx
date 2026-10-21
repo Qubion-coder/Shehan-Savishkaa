@@ -45,7 +45,7 @@ export default function InvitationPage({ guestName = '' }: { guestName?: string 
           <CeremonyDetails />
           <SimpleImageSection imageSrc="/pre/5.jpeg" />
           <CountdownSection />
-          <SimpleImageSection imageSrc="/pre/6.jpeg" />
+          <SimpleImageSection imageSrc="/pre/6.jpeg" useFullImage />
 
           <VenueLocation />
           <RSVPSection guestName={guestName} />

@@ -24,10 +24,10 @@ export default function SimpleImageSection({
         viewport={{ once: true }}
         className="w-[85%] lg:w-1/3"
       >
-        <div className={`relative ${useFullImage ? 'aspect-auto h-auto' : 'aspect-[4/5]'} md:h-[450px] md:aspect-auto rounded-[2rem] overflow-hidden border-[12px] border-white shadow-[0_25px_60px_-15px_rgba(0,0,0,0.2)]`}>
+        <div className={`relative ${useFullImage ? 'h-auto' : 'aspect-[4/5] md:h-[450px] md:aspect-auto'} rounded-[2rem] overflow-hidden border-[12px] border-white shadow-[0_25px_60px_-15px_rgba(0,0,0,0.2)]`}>
           <img
             alt={altText}
-            className={`w-full ${useFullImage ? 'h-auto' : 'h-full object-cover'} ${objectPosition}`}
+            className={`block w-full ${useFullImage ? 'h-auto' : 'h-full object-cover'} ${objectPosition}`}
             src={imageSrc}
           />
         </div>
